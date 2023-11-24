@@ -1,5 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
 
+:root {
+  --Linear-gradient-active__input__border: hsl(249, 99%, 64%) to
+    hsl(278, 94%, 30%);
+  --Red__input__errors: hsl(0, 100%, 66%);
+  --White: hsl(0, 0%, 100%);
+  --Light-grayish-violet: hsl(270, 3%, 87%);
+  --Dark-grayish-violet: hsl(279, 6%, 55%);
+  --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
+  font-size: 1.8rem;
+  min-height: 100vh;
   font-family: "Space Grotesk", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.wrapper {
+  background-color: var(--Very-dark-violet);
+}
+
+.hero-bg {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.card {
+  height: 150px;
+  padding: 1em 0;
+}
+
+.card-front {
+  top: 3.5em;
+  left: -0em;
+  position: absolute;
+}
+
+.card-input {
+  background-color: var(--White);
+  padding-top: 4em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
