@@ -229,6 +229,7 @@ form button {
 @media screen and (max-width: 767px) {
   .container {
     flex-direction: column;
+    margin: 0 auto;
   }
   .front_card .card_container img,
   .front_card,
